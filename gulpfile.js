@@ -23,11 +23,13 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 // Пути к нашим модулям яваскрипт
 let moduleJs = [
 
+    'app/js/fixedHeader.js',
     'app/js/main.js'
 ];
 // Пути к нашим внешним плагинам и библиотекам яваскрипт
 let vendorJs = [
         'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/headhesive/dist/headhesive.min.js',
         'node_modules/swiper/dist/js/swiper.jquery.min.js'
 
     ]
