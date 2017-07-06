@@ -9,6 +9,17 @@ $grey: #4e525d;
 adjustment
 -----------------------------------*/
 
+@mixin media($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+$size1: 1190px;
+$size2: 1080px;
+$size3: 980px;
+$size4: 768px;
+$size5: 480px;
 html,
 body {
     width: 100%;
@@ -32,6 +43,7 @@ body {
     position: relative;
     max-width: 1170px;
     margin: 0 auto;
+    // height: 100%;
 }
 
 ul {
@@ -63,3 +75,5 @@ h6 {
     margin: 0;
     font-weight: normal;
 }
+
+// mixins

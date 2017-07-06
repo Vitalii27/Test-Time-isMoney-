@@ -2,6 +2,9 @@
     display: inline-block;
     font-size: 26px;
     margin: 65px 0 130px;
+    @include media($size4) {
+        margin: 30px 0 50px;
+    }
 }
 
 .team {
@@ -25,7 +28,9 @@
         border-radius: 50%;
         background: #eeeef0;
         margin-bottom: 60px;
-        &__active {}
+        @include media($size4) {
+            margin-bottom: 20px;
+        }
     }
     &__name,
     &__post,
@@ -41,6 +46,9 @@
     }
     &__text {
         margin-bottom: 110px;
+        @include media($size4) {
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -63,8 +71,4 @@
         width: 11px;
         height: 42px;
     }
-}
-
-.avtive {
-    background: $blue;
 }

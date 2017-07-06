@@ -1,24 +1,30 @@
 .section__title_footer {
-    margin-top: 0;
+    @include media($size4) {
+        height: 100%;
+    }
+}
+
+.section__footer {
+    position: relative;
+    background-image: url(../img/footer_bg.png);
+    background-color: rgba(24, 24, 24, 0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .footer {
     position: relative;
     color: #fff;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
     height: 100vh;
-    background-image: url(../img/footer_bg.png);
-    background-color: rgba(24, 24, 24, 0.9);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     &__title {
         text-align: center;
-        margin-top: -18px;
-        margin-bottom: -20px;
         &_footer {
             display: inline-block;
             text-align: center;
@@ -29,6 +35,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        @include media($size2) {
+            margin: 0 30px;
+        }
+        @include media($size4) {
+            flex-direction: column;
+        }
     }
     &__left_block {
         max-width: 37.5%;
@@ -89,6 +101,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        @include media($size2) {
+            flex-direction: column;
+        }
         &_text {
             height: 44px;
             width: 270px;
@@ -97,6 +112,10 @@
             padding: 21px 15px;
             color: #6f6f6f;
             outline: none;
+            @include media($size3) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
             &:first-child {
                 margin-right: 19px;
             }
@@ -111,6 +130,9 @@
             color: #6f6f6f;
             outline: none;
             resize: none;
+            @include media($size3) {
+                margin-top: 0;
+            }
         }
         &_btn {
             position: absolute;
