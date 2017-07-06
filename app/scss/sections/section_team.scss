@@ -1,7 +1,7 @@
 .section__title {
     display: inline-block;
     font-size: 26px;
-    margin: 72px 0 140px;
+    margin: 65px 0 130px;
 }
 
 .team {
@@ -24,27 +24,8 @@
         border: 1px solid transparent;
         border-radius: 50%;
         background: #eeeef0;
-        margin-bottom: 70px;
-        &:hover {
-            &:after,
-            &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: #f46d6d;
-            }
-            &:after {
-                height: 11px;
-                width: 42px;
-            }
-            &:before {
-                width: 11px;
-                height: 42px;
-            }
-        }
+        margin-bottom: 60px;
+        &__active {}
     }
     &__name,
     &__post,
@@ -56,9 +37,30 @@
         font-size: 22px;
     }
     &__post {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
     &__text {
         margin-bottom: 110px;
+    }
+}
+
+.active__circle {
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #f46d6d;
+    }
+    &:after {
+        height: 11px;
+        width: 42px;
+    }
+    &:before {
+        width: 11px;
+        height: 42px;
     }
 }

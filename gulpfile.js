@@ -23,7 +23,9 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 // Пути к нашим модулям яваскрипт
 let moduleJs = [
 
+    'app/js/anchor.js',
     'app/js/fixedHeader.js',
+    'app/js/hover.js',
     'app/js/main.js'
 ];
 // Пути к нашим внешним плагинам и библиотекам яваскрипт

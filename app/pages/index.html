@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
 
-        <section class="section__welcome">
+        <section class="section__welcome" id="home">
             <header class="header ">
                 <div class="header__container container">
                     <div class="header__left">
@@ -27,12 +27,12 @@
                     <div class="header__right">
                         <div class="nav">
                             <ul class="nav__list">
-                                <li class="nav__item"><a href="1" class="nav__link">Home</a></li>
-                                <li class="nav__item"><a href="2" class="nav__link">Service</a></li>
-                                <li class="nav__item"><a href="3" class="nav__link">Portfolio</a></li>
-                                <li class="nav__item"><a href="4" class="nav__link">Team</a></li>
-                                <li class="nav__item"><a href="5" class="nav__link">Blog</a></li>
-                                <li class="nav__item"><a href="7" class="nav__link">Contact</a></li>
+                                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                                <li class="nav__item"><a href="#buy" class="nav__link">Service</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+                                <li class="nav__item"><a href="#team" class="nav__link">Team</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                                <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
                             </ul>
                         </div>
 
@@ -56,7 +56,7 @@
 
 
         </section>
-        <section class="team " id="our__services">
+        <section class="team " id="team">
             <h2 class="section__title">The Theam</h2>
             <ul class="container team__list">
                 <li class="team__item">
@@ -69,7 +69,7 @@
                 </li>
                 <li class="team__item">
                     <a href="#" class="team__link">
-                        <div class="team__circle"></div>
+                        <div class="team__circle active__circle"></div>
                         <div class="team__name">Narate Ketram</div>
                         <div class="team__post">Creative Director</div>
                         <div class="team__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </div>
@@ -95,9 +95,63 @@
 
 
         </section>
-        <section class="section__footer">
+        <section class="buy" id="buy">
+            <div class="container buy__container">
+                <div class="buy__container_column">
+                    <div class="buy__container_column_title">Basic</div>
+                    <div class="buy__container_column_price">$5.01/Month</div>
+                    <ul class="buy__container_column_list">
+                        <li class="buy__container_column_item">Lorem ipsum</li>
+                        <li class="buy__container_column_item">Dolor sit amet, consect</li>
+                        <li class="buy__container_column_item">Adipiscing elit</li>
+                        <li class="buy__container_column_item">Proin commodo turpis</li>
+                        <li class="buy__container_column_item">lacus pulvinarvel </li>
+                        <li class="buy__container_column_item">Prnare nisi pretium.</li>
+
+                    </ul>
+                    <div class="buy__container_column_btn">
+                        <a href="#" class="buy__container_column_btn_link">Buy now</a>
+                    </div>
+                </div>
+                <div class="buy__container_column">
+                    <div class="buy__container_column_title">Pro</div>
+                    <div class="buy__container_column_price">$10.01/Month</div>
+                    <ul class="buy__container_column_list">
+                        <li class="buy__container_column_item">Lorem ipsum</li>
+                        <li class="buy__container_column_item">Dolor sit amet, consect</li>
+                        <li class="buy__container_column_item">Adipiscing elit</li>
+                        <li class="buy__container_column_item">Proin commodo turpis</li>
+                        <li class="buy__container_column_item">lacus pulvinarvel </li>
+                        <li class="buy__container_column_item">Prnare nisi pretium.</li>
+
+                    </ul>
+                    <div class="buy__container_column_btn">
+                        <a href="#" class="buy__container_column_btn_link">Buy now</a>
+                    </div>
+                </div>
+                <div class="buy__container_column">
+                    <div class="buy__container_column_title">Premium</div>
+                    <div class="buy__container_column_price">$20.01/Month</div>
+                    <ul class="buy__container_column_list">
+                        <li class="buy__container_column_item">Lorem ipsum</li>
+                        <li class="buy__container_column_item">Dolor sit amet, consect</li>
+                        <li class="buy__container_column_item">Adipiscing elit</li>
+                        <li class="buy__container_column_item">Proin commodo turpis</li>
+                        <li class="buy__container_column_item">lacus pulvinarvel </li>
+                        <li class="buy__container_column_item">Prnare nisi pretium.</li>
+
+                    </ul>
+                    <div class="buy__container_column_btn">
+                        <a href="#" class="buy__container_column_btn_link">Buy now</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="section__footer" id="contacts">
             <footer class="footer">
-                <div class="container">
+                <div class="container container__footer">
                     <div class="footer__title">
                         <h2 class="section__title section__title_footer ">Contact Us</h2>
                     </div>
@@ -115,7 +169,7 @@
                             <div class="footer__left_block_info">
                                 <div class="footer__left_block_info_title">Posted by Dospel &amp; GanjaParker</div>
                                 <div class="footer__left_block_info_tel">+XX-XXXX - XXXX - XX</div>
-                                <div class="footer__left_block_info_email"><a href="#" class="footer__left_block_info_email_link">info@mail.com</a></div>
+                                <div class="footer__left_block_info_email"><a href="mailto:info@mail.com" class="footer__left_block_info_email_link">info@mail.com</a></div>
                             </div>
                         </div>
                         <div class="footer__right_block">
