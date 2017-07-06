@@ -26,19 +26,25 @@ let moduleJs = [
     'app/js/anchor.js',
     'app/js/fixedHeader.js',
     'app/js/hover.js',
+    'app/js/slider.js',
+    'app/js/validation.js',
+    'app/js/form.js',
     'app/js/main.js'
 ];
 // Пути к нашим внешним плагинам и библиотекам яваскрипт
 let vendorJs = [
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/headhesive/dist/headhesive.min.js',
-        'node_modules/swiper/dist/js/swiper.jquery.min.js'
+        'node_modules/swiper/dist/js/swiper.jquery.min.js',
+        'node_modules/qtip2/dist/jquery.qtip.min.js'
+
 
     ]
     //Пути к нашим внешним плагинам и библиотекам стили
 let vendorCss = [
         'node_modules/normalize-css/normalize.css',
         'node_modules/swiper/dist/css/swiper.min.css',
+        'node_modules/qtip2/dist/jquery.qtip.css',
 
     ]
     // Запускаем сервер. Предварительно выполнив задачи ['html', 'styles', 'images', ...
@@ -58,6 +64,7 @@ gulp.task('browser-sync', [
 gulp.task('html', function() {
     return gulp.src('app/pages/**/*.*')
         .pipe(gulp.dest('dist'))
+        .pipe(browserSync.stream({ once: true }))
 });
 
 // переносим fonts файлы
