@@ -1,4 +1,3 @@
-console.log('ververv')
 var validation = (function() {
     var _memory = [];
     var validateForm = function(form) {

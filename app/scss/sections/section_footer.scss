@@ -22,7 +22,7 @@
     // flex-wrap: wrap;
     // justify-content: center;
     // align-items: center;
-    height: 100vh;
+    height: 100%;
     &__title {
         text-align: center;
         &_footer {
@@ -98,9 +98,9 @@
     &__block {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-end;
         @include media($size2) {
             flex-direction: column;
         }
@@ -109,15 +109,12 @@
             width: 270px;
             border: 1px solid transparent;
             border-radius: 3px;
-            padding: 21px 15px;
+            padding: 10px 15px;
             color: #6f6f6f;
             outline: none;
             @include media($size3) {
                 width: 100%;
                 margin-bottom: 30px;
-            }
-            &:first-child {
-                margin-right: 19px;
             }
         }
         &_comment {
@@ -135,13 +132,11 @@
             }
         }
         &_btn {
-            position: absolute;
-            right: 0;
+            align-items: flex-end;
             &_submit {
                 color: #fff;
                 background-color: rgba($blue, 0.8);
                 padding: 14px 55px;
-                // opacity: .8;
                 border: 1px solid transparent;
                 border-radius: 3px;
                 transition: all .3s;

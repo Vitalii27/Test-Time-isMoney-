@@ -1,5 +1,4 @@
 .buy {
-    // position: relative;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -16,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 120px auto 100px;
+    margin: 120px 0 100px;
     @include media($size1) {
         flex-direction: column;
     }
@@ -30,6 +29,9 @@
         align-items: center;
         margin-right: 25px;
         width: 365px;
+        &:last-child {
+            margin-right: 0;
+        }
         @include media($size1) {
             margin-right: 0;
             margin-bottom: 30px;
@@ -79,7 +81,6 @@
             border-radius: 0 0 2px 2px;
             &_link {
                 display: inline-block;
-                position: absolute;
                 padding: 12px 0;
                 width: 170px;
                 color: #fff;
