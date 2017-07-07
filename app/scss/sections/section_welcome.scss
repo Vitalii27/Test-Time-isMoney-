@@ -54,6 +54,12 @@
             width: inherit;
             margin-right: 20px;
         }
+        @include media($size5) {
+            @media screen and (min-width: 0\0) {
+                width: 87%;
+                height: 30px;
+            }
+        }
         &:hover {
             background: #f8f9fb;
             .nav__link {
@@ -76,6 +82,11 @@
         @include media($size4) {
             padding: 18px 0;
         }
+        @include media($size5) {
+            @media screen and (min-width: 0\0) {
+                padding: 5px 0;
+            }
+        }
     }
 }
 
@@ -92,6 +103,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     &__title {
         font-size: 63px;
         color: #fff;
@@ -99,6 +111,14 @@
         text-shadow: 0 1px 1.2px rgba(133, 172, 157, 1);
         @include media($size4) {
             font-size: 50px;
+        }
+        @include media($size5) {
+            font-size: 40px;
+        }
+        @include media($size5) {
+            @media screen and (min-width: 0\0) {
+                width: 100%;
+            }
         }
     }
     &__text {
@@ -109,6 +129,14 @@
         max-width: 380px;
         @include media($size4) {
             font-size: 19px;
+        }
+        @include media($size5) {
+            font-size: 15px;
+        }
+        @include media($size5) {
+            @media screen and (min-width: 0\0) {
+                width: 100%;
+            }
         }
     }
     &__btn_link {
@@ -125,6 +153,10 @@
             padding: 10px 0;
             font-size: 20px;
             width: 190px;
+        }
+        @include media($size5) {
+            font-size: 17px;
+            width: 150px;
         }
         &:hover {
             opacity: 1;
